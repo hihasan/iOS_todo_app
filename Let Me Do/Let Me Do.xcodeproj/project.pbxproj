@@ -14,6 +14,7 @@
 		CF9E15722A692C490047EC04 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E15712A692C490047EC04 /* ListRowView.swift */; };
 		CF9E15752A692FB80047EC04 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E15742A692FB80047EC04 /* AddView.swift */; };
 		CF9E15782A6935430047EC04 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E15772A6935430047EC04 /* ItemModel.swift */; };
+		CF9E157D2A6943050047EC04 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E157C2A6943050047EC04 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CF9E15712A692C490047EC04 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		CF9E15742A692FB80047EC04 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		CF9E15772A6935430047EC04 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		CF9E157C2A6943050047EC04 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +59,12 @@
 		CF9E15602A6927D70047EC04 /* Let Me Do */ = {
 			isa = PBXGroup;
 			children = (
-				CF9E15762A69352A0047EC04 /* Model */,
-				CF9E15732A692F990047EC04 /* Views */,
-				CF9E15612A6927D70047EC04 /* Let_Me_DoApp.swift */,
-				CF9E15652A6927D90047EC04 /* Assets.xcassets */,
 				CF9E15672A6927D90047EC04 /* Preview Content */,
+				CF9E157B2A69417F0047EC04 /* ViewModel */,
+				CF9E15732A692F990047EC04 /* Views */,
+				CF9E15762A69352A0047EC04 /* Model */,
+				CF9E157A2A6941500047EC04 /* res */,
+				CF9E15792A6941450047EC04 /* utils */,
 			);
 			path = "Let Me Do";
 			sourceTree = "<group>";
@@ -90,6 +93,30 @@
 				CF9E15772A6935430047EC04 /* ItemModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CF9E15792A6941450047EC04 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF9E15612A6927D70047EC04 /* Let_Me_DoApp.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		CF9E157A2A6941500047EC04 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				CF9E15652A6927D90047EC04 /* Assets.xcassets */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		CF9E157B2A69417F0047EC04 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF9E157C2A6943050047EC04 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +191,7 @@
 			files = (
 				CF9E15782A6935430047EC04 /* ItemModel.swift in Sources */,
 				CF9E15752A692FB80047EC04 /* AddView.swift in Sources */,
+				CF9E157D2A6943050047EC04 /* ListViewModel.swift in Sources */,
 				CF9E15622A6927D70047EC04 /* Let_Me_DoApp.swift in Sources */,
 				CF9E15702A6929140047EC04 /* ListView.swift in Sources */,
 				CF9E15722A692C490047EC04 /* ListRowView.swift in Sources */,
