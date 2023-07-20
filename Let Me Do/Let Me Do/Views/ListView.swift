@@ -10,6 +10,7 @@ import SwiftUI
 struct ListView: View {
     
     @EnvironmentObject var listViewModel : ListViewModel
+    @State var isToggle : Bool = false
     
     var body: some View {
         List{
@@ -31,7 +32,17 @@ struct ListView: View {
                     EditButton()
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink("Add", destination: AddView())
+                    Button(action: {
+                        isToggle.toggle()
+                    }, label: {
+                        Image(systemName: "square.and.pencil")
+                            .font(.headline)
+                            .padding(5.0)
+                            .background(Color.white.cornerRadius(10.0))
+                    }).sheet(isPresented: $isToggle){
+                        AddView()
+                    }
+//                    NavigationLink("Add", destination: AddView())
                     
                 }
             }

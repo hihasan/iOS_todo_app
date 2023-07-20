@@ -17,28 +17,47 @@ struct AddView: View {
     @State var showAlert : Bool = false
     
     var body: some View {
-        ScrollView {
-            VStack {
-                TextField("Type Something Here......", text: $textFieldText)
-                    .padding(.horizontal)
-                    .frame(height: 55)
-                    .background(Color.gray.opacity(0.3))
-                .cornerRadius(10.0)
-                
-                Button(action: {
-                    saveBtnPressed()
-                }, label: {
-                    Text("Save".uppercased())
+        ZStack(alignment: .topLeading){
+            Color.yellow.edgesIgnoringSafeArea(.all)
+            ScrollView {
+                HStack {
+                    Text("Add An Item ✏️")
+                        .font(.largeTitle)
                         .foregroundColor(.white)
+                    
+                    Spacer()
+                    
+                    Image(systemName: "xmark")
                         .font(.headline)
+                        .foregroundColor(Color.yellow)
+                        .padding(20.0)
+                        .background(Color.white.cornerRadius(10.0))
+                    
+                }.padding(.horizontal)
+                    .padding(.vertical)
+                VStack {
+                    TextField("Type Something Here......", text: $textFieldText)
+                        .padding(.horizontal)
                         .frame(height: 55)
-                        .frame(maxWidth: .infinity)
-                        .background(Color.accentColor)
-                        .cornerRadius(10.0)
-                })
-            }.padding(.all, 14.0)
-        }.navigationTitle("Add An Item ✏️")
+                        .background(Color.white.opacity(0.7))
+                    .cornerRadius(10.0)
+                    
+                    Button(action: {
+                        saveBtnPressed()
+                    }, label: {
+                        Text("Save".uppercased())
+                            .foregroundColor(.white)
+                            .font(.headline)
+                            .frame(height: 55)
+                            .frame(maxWidth: .infinity)
+                            .background(Color.accentColor)
+                            .cornerRadius(10.0)
+                    })
+                }.padding(.all, 14.0)
+            }
             .alert(isPresented: $showAlert, content: getAlert)
+        }
+        
     
     }
     
