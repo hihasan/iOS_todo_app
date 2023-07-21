@@ -29,7 +29,10 @@ struct ListView: View {
         .navigationTitle("Todo List 📝")
         .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    EditButton()
+                    if listViewModel.items.count > 0{
+                        EditButton()
+                    }
+                    
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
@@ -40,7 +43,7 @@ struct ListView: View {
                             .padding(5.0)
                             .background(Color.white.cornerRadius(10.0))
                     }).sheet(isPresented: $isToggle){
-                        AddView()
+                        AddSheetView()
                     }
 //                    NavigationLink("Add", destination: AddView())
                     

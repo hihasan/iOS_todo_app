@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddView: View {
+struct AddSheetView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel : ListViewModel
@@ -18,20 +18,33 @@ struct AddView: View {
     
     var body: some View {
         ZStack(alignment: .topLeading){
-            Color.yellow.edgesIgnoringSafeArea(.all)
+            
             ScrollView {
                 HStack {
                     Text("Add An Item ✏️")
                         .font(.largeTitle)
-                        .foregroundColor(.white)
+                        .foregroundColor(.primary)
                     
                     Spacer()
                     
-                    Image(systemName: "xmark")
-                        .font(.headline)
-                        .foregroundColor(Color.yellow)
-                        .padding(20.0)
-                        .background(Color.white.cornerRadius(10.0))
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }, label: {
+                        Image(systemName: "xmark")
+                            .font(.headline)
+                            .foregroundColor(Color.primary)
+                            .padding(20.0)
+                            .background(
+                                Color.accentColor
+                                    .cornerRadius(10.0)
+                                    .shadow(
+                                        color: .accentColor,
+                                        radius: 5.0,
+                                        x: 0.5,
+                                        y: 1.0
+                                    )
+                            )
+                    })
                     
                 }.padding(.horizontal)
                     .padding(.vertical)
@@ -39,7 +52,7 @@ struct AddView: View {
                     TextField("Type Something Here......", text: $textFieldText)
                         .padding(.horizontal)
                         .frame(height: 55)
-                        .background(Color.white.opacity(0.7))
+                        .background(Color.gray.opacity(0.5))
                     .cornerRadius(10.0)
                     
                     Button(action: {
@@ -87,7 +100,7 @@ struct AddView: View {
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack{
-            AddView()
+            AddSheetView()
         }
         .environmentObject(ListViewModel())
     }
