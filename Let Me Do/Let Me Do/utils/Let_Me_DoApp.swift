@@ -17,6 +17,7 @@ struct Let_Me_DoApp: App {
             NavigationStack {
                 ListView()
             }.environmentObject(listViewModel)
+            
         }
     }
 }
