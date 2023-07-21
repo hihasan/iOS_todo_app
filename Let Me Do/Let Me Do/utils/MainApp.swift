@@ -15,7 +15,7 @@ struct Let_Me_DoApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                ListView()
+                LaunchScreenView()
             }.environmentObject(listViewModel)
             
         }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		784186062A6B097B00E5C970 /* NoItemViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784186052A6B097B00E5C970 /* NoItemViews.swift */; };
+		784186082A6B22FE00E5C970 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784186072A6B22FE00E5C970 /* LaunchScreenView.swift */; };
+		7841860A2A6B277500E5C970 /* LaunchAnimationUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784186092A6B277500E5C970 /* LaunchAnimationUI.swift */; };
 		CF9E15622A6927D70047EC04 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E15612A6927D70047EC04 /* MainApp.swift */; };
 		CF9E15662A6927D90047EC04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9E15652A6927D90047EC04 /* Assets.xcassets */; };
 		CF9E15692A6927D90047EC04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9E15682A6927D90047EC04 /* Preview Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		784186052A6B097B00E5C970 /* NoItemViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemViews.swift; sourceTree = "<group>"; };
+		784186072A6B22FE00E5C970 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		784186092A6B277500E5C970 /* LaunchAnimationUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimationUI.swift; sourceTree = "<group>"; };
 		CF9E155E2A6927D70047EC04 /* Let Me Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let Me Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9E15612A6927D70047EC04 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		CF9E15652A6927D90047EC04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +89,9 @@
 				CF9E156F2A6929140047EC04 /* ListView.swift */,
 				CF9E15712A692C490047EC04 /* ListRowView.swift */,
 				CF9E15742A692FB80047EC04 /* AddSheetView.swift */,
+				784186052A6B097B00E5C970 /* NoItemViews.swift */,
+				784186072A6B22FE00E5C970 /* LaunchScreenView.swift */,
+				784186092A6B277500E5C970 /* LaunchAnimationUI.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,10 +200,13 @@
 			files = (
 				CF9E15782A6935430047EC04 /* ItemModel.swift in Sources */,
 				CF9E15752A692FB80047EC04 /* AddSheetView.swift in Sources */,
+				7841860A2A6B277500E5C970 /* LaunchAnimationUI.swift in Sources */,
 				CF9E157D2A6943050047EC04 /* ListViewModel.swift in Sources */,
 				CF9E15622A6927D70047EC04 /* MainApp.swift in Sources */,
 				CF9E15702A6929140047EC04 /* ListView.swift in Sources */,
 				CF9E15722A692C490047EC04 /* ListRowView.swift in Sources */,
+				784186062A6B097B00E5C970 /* NoItemViews.swift in Sources */,
+				784186082A6B22FE00E5C970 /* LaunchScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
